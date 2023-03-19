@@ -1,0 +1,11 @@
+function appear(){
+	let details = document.getElementById('details');
+
+
+	details.classList.add('show');
+}
+function disappear(){
+	let details = document.getElementById('details');
+
+	details.classList.remove('show');
+}

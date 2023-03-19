@@ -1,0 +1,19 @@
+.show{
+    z-index: 4;
+}
+.unshow{
+	z-index: 1;
+}
+#details1 .details{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+#details2 .details{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+#details1:hover{
+	z-index: 1;
+}
