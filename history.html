@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/homestyle.css">
+	<link rel="stylesheet" type="text/css" href="file:///C:/Users/rafhh/Downloads/fontawesome-free-6.2.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/categories.css">
+	<title></title>
+</head>
+<style>
+	
+  table {
+  position: absolute;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  top: 20%;
+  left: 21%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+#myInput{
+  position: absolute;
+  top: 3%;
+  left: 30%;
+  width: 50%;
+  height: 7%;
+  border-radius: 50px;
+}
+#btnClear{
+  position: absolute;
+  top: 1%;
+  left: 63%;
+  height: 7%;
+  width: 6%;
+}
+
+.active1{
+  background-color: #ff5722e8;
+
+}
+</style>
+<body>
+  <input id="myInput" type="text" placeholder="Search..">
+
+      <div class="main_content">
+        
+    </div>
+    <div class="navbar">
+      <ul>
+        <li ><a href="adminhome.html">Home</a></li>
+        <li ><a href="admincategories.html">Categories</a></li>
+        <li><a class="active1" href="history.html">History</a></li>
+      </ul>
+    </div>
+  
+
+
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Company Name</th>
+				<th>Car Name</th>
+				<th>Email</th>
+				<th>Phone Number</th>
+				<th>Date Rented</th>
+				<th>Date Returned</th>
+        <th>Paid/Unpaid</th>
+			</tr>
+		</thead>
+    <tbody id="myTable">
+      
+    </tbody>
+    
+      
+    
+	</table>
+    <button id="btnClear" style="margin-left: 250px; margin-top: 15px; background: #404040; color: white; border: none; padding: 8px; border-radius: 6px;" >Clear</button>
+
+</body>
+<script type="text/javascript">
+  function deleterow(t){
+    document.getElementById('myTable').deleteRow(t);
+  }
+  let datas = [];
+
+if (localStorage.length>0) {
+    JSON.parse(localStorage.getItem("datas"));
+    datas = JSON.parse(localStorage.getItem("datas"));
+}
+
+let table = document.querySelector('table tbody');
+table.innerHTML 
+
+
+// = '<tr><th>Full Name</th><th>Company Name</th><th>Car Name</th><th>Email</th><th>Phone Number</th><th>Date Rented</th><th>Date Returned</th><th>Paid</th><th>Unpaid</th></tr>';
+
+for (let data of datas){
+table.innerHTML += '<tr><td>'+data.name+'</td><td>'+data.company+'</td><td>'+data.carname+'</td><td>'+data.email+'</td><td>'+data.phone+'</td><td>'+data.date+'</td><td>'+data.datereturn+'</td><td class="paid">'+data.radio+'</td><td><button>Edit</button><button onclick="deleterow(this)">Delete</button></td><tr>';
+};
+
+document.getElementById('btnClear').onclick = function() {
+      localStorage.clear();
+}
+</script>
+ <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script>
+  $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>
+
+</html>

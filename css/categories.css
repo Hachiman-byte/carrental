@@ -1,0 +1,340 @@
+*{
+	padding: 0;
+	margin: 0;
+	/*outline: 1px solid red;*/
+}
+.body{
+	position: absolute;
+	background-color: #80808033;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	overflow: scroll;
+}
+.body h1{
+	font-family: stencil;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	font-size: 50px;
+}
+.body .banner{
+	position: fixed;
+	width: 100%;
+	top: 0%;
+	height: 11%;
+	background-color: #e9e8e8eb;
+	z-index: 3; 
+}
+.body .banner .label{
+	position: absolute;
+	top: 36%;
+	left: 23%;
+	font-size: 30px;
+	
+}
+.body .banner .label1{
+	position: absolute;
+	top: 36%;
+	left: 33%;
+	font-weight: 100;
+	font-size: 30px;
+	font-family: Agency FB;
+}
+.body .banner .label:after{
+	content: '';
+	width: 720%;
+	height: 3px;
+	background-color: black;
+	position: absolute;
+	top: 105%;
+	left: -3%;
+}
+.body .navbar{
+	position: fixed;
+	left: 0%;
+	height: 100%;
+	width: 20%;
+	background-color: black;
+	z-index: 4;
+	text-align: center;
+}
+.navbar{
+	position: fixed;
+	left: 0%;
+	height: 100%;
+	width: 20%;
+	background-color: black;
+	z-index: 4;
+	text-align: center;
+}
+.body .navbar ul{
+	list-style: none;	
+}
+.navbar ul{
+	list-style: none;	
+}
+.body .navbar ul li{
+	font-size: 30px;
+	padding: 0;
+	transition: ease-in-out 250ms;
+	padding: 10px 0 10px 0;
+}
+.navbar ul li{
+	font-size: 30px;
+	padding: 0;
+	transition: ease-in-out 250ms;
+	padding: 10px 0 10px 0;
+}
+.body .navbar ul li:hover{
+	background-color: #ff000070;
+	cursor: pointer;
+}
+.navbar ul li:hover{
+	background-color: #ff000070;
+	cursor: pointer;
+}
+.body .navbar ul li a{
+	color: white;
+	text-decoration: none;
+	padding: 10px 100px 10px 100px;
+}
+body .navbar ul li a{
+	color: white;
+	text-decoration: none;
+	padding: 10px 83px 10px 100px;
+}
+.body .navbar ul li:nth-child(1){
+	margin-top: 30%;
+}
+.navbar ul li:nth-child(1){
+	margin-top: 30%;
+}
+.active{
+	background-color: #ff5722e8;
+}
+.body .card1{
+	top: 15%;
+	left: 25%;
+	width: 20%;
+	height: 275px;
+	background-color: white;
+	box-shadow: 17px 9.732px 20px -3px #0000002e;
+	border-radius: 15px;		
+	background-image: url(../img/alphard.png);
+	background-size: contain;
+}
+.body .card2{
+	top: 15%;
+	left: 51%;
+	width: 20%;
+	height: 275px;
+	background-color: white;
+	box-shadow: 17px 9.732px 20px -3px #0000002e;
+	border-radius: 15px;
+	background-image: url(../img/suv1.png);
+	background-size: contain;
+}
+.body .card3{
+	top: 15%;
+	left: 77%;
+	width: 20%;
+	height: 275px;
+	background-color: white;
+	box-shadow: 17px 9.732px 20px -3px #0000002e;
+	border-radius: 15px;
+	background-image: url(../img/sedan.png);
+	background-size: contain;	
+}
+.body .card4{
+	top: 63%;
+	left: 38%;
+	width: 20%;
+	height: 275px;
+	background-color: white;
+	box-shadow: 17px 9.732px 20px -3px #0000002e;
+	border-radius: 15px;
+	background-image: url(../img/minibus.png);
+	background-size: contain;	
+}
+.body .card5{
+	top: 63%;
+	left: 65%;
+	width: 20%;
+	height: 275px;
+	background-color: white;
+	box-shadow: 17px 9.732px 20px -3px #0000002e;
+	border-radius: 15px;
+	background-image: url(../img/hatchback2.png);
+	background-size: 367px;
+	background-color: #000000db;
+}
+.body .cards{
+	position: absolute;
+	transition: ease-in-out 250ms;
+	text-decoration: none;
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	font-family: Impact;
+	border: 7px solid white;
+}
+.body a:hover{
+	cursor: pointer;
+	transform: translate(-10px,-10px);
+}
+.body .boxes{
+	width: 23%;
+	height: 65%	;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 17px 10.732px 28px -4px #0000005c;
+}
+.boxespic{
+	position: absolute;
+	top: 3%;
+	left: 3%; 
+	width: 290px;
+	height: 61%;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-size: cover;
+	background-color: #69696912;
+}
+.body .boxes1{
+	position: absolute;
+	top: 15%;
+	left: 21%;
+}
+.body .boxes2{
+	position: absolute;
+	top: 15%;
+	left: 641px;	
+}
+.body .boxes3{
+	position: absolute;
+	top: 15%;
+	left: 74%;	
+}
+.body .boxes4{
+	position: absolute;
+	top: 85%;
+	left: 21%;
+}
+.body .boxes5{
+	position: absolute;
+	top: 85%;
+	left: 74%;	
+}
+.body .boxes6{
+	position: absolute;
+	top: 85%;
+	left: 641px;	
+}
+.body .boxes h2{
+	position: absolute;
+	top: 64%;
+	left: 6%;
+}
+.body .boxes p{
+	position: absolute;
+	top: 76%;
+	left: 20%;
+}
+.body .boxes b{
+	position: absolute;
+	top: 71%;
+	left: 10%;
+}
+.body .boxes h3{
+	position: absolute;
+	top: 80%;
+	left: 10%;
+}
+.body .boxes button{
+	width: 50%;
+	height: 40px;
+	position: absolute;
+	top: 88%;
+	left: 25%;
+	border-radius: 50px;
+	border: none;
+	color: white;
+	background-color: #ff5722e8;
+	font-weight: 700;
+	font-size: 21px; 
+	transition: ease-in-out 200ms;
+}
+.body .boxes button:hover{	
+    box-shadow: 2px 0.732px 21px 1px black;
+    cursor: pointer;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #6969693b;
+	top: 0%;
+	left: 0%;
+	overflow: hidden;
+	z-index: 5;
+	display: none;
+	transition: ease-in-out 250ms;
+	backdrop-filter:blur(1px);
+}
+.show{
+	display: block;
+}
+.overlay .box{
+	position: absolute;
+	top: 7%;
+	left: 31%;
+	transform: translate(-50%,-50%);
+	width: 35%;
+	height: 610px;
+	background-color: white;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow:1px 10.732px 13px 0px #6a6a6a91;
+	z-index: 6;
+
+}
+.overlay .box h2{
+	font-family: stencil;
+}
+.overlay .box .exit{
+	position: absolute;
+	top: 0%;
+	left: 92%;
+	font-weight: 700;
+	background-color: #ed8989;
+	width: 40px;
+	height: 40px;
+	border-radius: 0 15px 0 0;
+}
+.overlay .box .exit:hover{
+	cursor: pointer;
+}
+.overlay .box label{
+	position: absolute;
+	left: 10%;
+	font-weight: 700;
+	font-size: 20px;
+	color: #ad4545;
+}
+.overlay .box .input{
+	width: 80%;
+	height: 30px;
+	margin-top: 5px;
+	background-color: #80808017;
+}
+.overlay .box .submit{
+	width: 50%;
+	height: 40px;
+	background-color: #00ff002e;
+	font-weight: 700;
+	font-size: 25px;
+}
+.overlay .box .submit:hover{
+	cursor: pointer;
+	background-color: #3ad73ad1;

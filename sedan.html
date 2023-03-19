@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/categories.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+</head>
+<body>
+	<div class="body">
+		<div class="banner">
+			<b class="label">Categories</b>
+			<b class="label1">|  Sedan</b>
+		</div>
+		
+		<div class="navbar">
+			<ul>
+				<li ><a href="index.html">Home</a></li>
+				<li class="active"><a href="categories.html">Categories</a></li>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="boxes boxes1">
+      <img src="img/bmw-i4.png" alt="photo" class="boxespic">
+      <h2>BMW I4</h2>
+      <b>Capacity:</b><p>5</p>
+      <h3>&#8369;7, 500/hr</h3>
+      <button onclick="pop();">Rent Now</button>
+    </div>
+		<div class="boxes boxes2">
+      <img src="img/tesla-model3.png" alt="photo" class="boxespic">
+      <h2>Tesla Model 3</h2>
+      <b>Capacity:</b><p>5</p>
+      <h3>&#8369;9,100/hr</h3>
+      <button onclick="pop();">Rent Now</button>
+    </div>
+		<div class="boxes boxes3">
+      <img src="img/jaguar-xf.png" alt="photo" class="boxespic">
+      <h2>Jaguar XF</h2>
+      <b>Capacity:</b><p>5</p>
+      <h3>&#8369;6,500/hr</h3>
+      <button onclick="pop();">Rent Now</button>
+    </div>
+		<div class="boxes boxes4">
+      <img src="img/maserati-ghibli.png" alt="photo" class="boxespic">
+      <h2>Maserati Ghibli</h2>
+      <b>Capacity:</b><p>5</p>
+      <h3>&#8369;9,110/hr</h3>
+      <button onclick="pop();">Rent Now</button>
+    </div>\
+    <div class="boxes boxes5">
+      <img src="img/cadillac-ct5-v.png" alt="photo" class="boxespic">
+      <h2>Cadillac CT5-V</h2>
+      <b>Capacity:</b><p>4-5</p>
+      <h3>&#8369;12,000/hr</h3>
+      <button onclick="pop();">Rent Now</button>
+    </div>
+    <div class="boxes boxes6">
+      <img src="img/audi-a3.png" alt="photo" class="boxespic">
+      <h2>Audi A3</h2>
+      <b>Capacity:</b><p>5</p>
+      <h3>&#8369;8,900/hr</h3>
+      <button onclick="pop();">Rent Now</button>
+    </div>
+	</div>
+		</div>
+	<div class="overlay" id="overlay">
+    <form id="box"class="box animate__animated animate__bounceIn">
+      <h2>BOOK A VEHICLE</h2>
+      <button class="exit" onclick="popout();">&#10005</button>
+      <br>
+      <br>
+      <label>Full Name</label>
+      <br>
+      <input id="name" class="input" type="text" name="">
+      <br>
+      <label>Company</label>
+      <br>
+      <input id="company" class="input" type="text" name="">
+      <br>
+      <label>Date Needed</label>
+      <br>
+      <input id="date" class="input" type="text" name="">
+      <br>
+      <label>Email</label>
+      <br>
+      <input id="email" class="input" type="email" name="">
+      <br>
+      <label>Phone number</label>
+      <br>
+      <input id="phone" class="input" type="number" name="">
+      <br>
+      <label>Car name</label>
+      <br>
+      <input type="text" class="input" id="carname" name="">
+      <br>
+      <label>Date Return</label>
+      <br>
+      <input type="date" class="input" id="datereturn" name="">
+      <br><br>
+      <label>Paid</label>
+      <input id="paid" type="radio" name="status" value="Paid">
+      <br><br>
+      <label>Unpaid</label>
+      <input id="paid1" type="radio" name="status" value="Unpaid">
+      <button class="submit" onclick="save()">BOOK NOW!</button>
+      <br><br>
+    </form>
+    <script src="js/mains.js"></script>
+  </div>
+</body>
+</html>
